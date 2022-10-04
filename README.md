@@ -36,7 +36,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details. <br>
 
 github page 배포하기
 
-<br>
+<br><br>
 
 React 프로젝트를 github page에 배포하기 위해서 로컬 프로젝트에 gh-pages 를 설치해야 함. <br>
 배포할 React 프로젝트에서 아래의 명령어를 실행. <br>
