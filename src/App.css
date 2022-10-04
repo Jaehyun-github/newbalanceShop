@@ -1,38 +1,170 @@
-.App {
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #222;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+#wrap{
+  min-width: 1240px;
+}
+
+#header{
+  width: 100%;
+  min-width: 1240px;
+}
+
+.header_in{
+  width: 1200px;
+  height: 85px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: orange; */
+}
+
+.header_left .logo a{
+  display: block;
+  width: 100px;
+  height: 80px;
+  text-indent: -99999px;
+  background-image: url(/img/header_logo.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header_right{
+  display: flex;
+  align-items: center;
+}
+
+.header_right .gnb ul{
+  display: flex;
+  margin-right: 300px;
+}
+
+.gnb li{
+  margin-right: 45px;
+}
+
+.gnb a{
+  color: #222;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gnb a:hover{
+  color: #cf0a2c;
+}
+
+.gnb .launchcalendar{
+  color: #cf0a2c;
+}
+
+.header_right .util ul{
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.util ul li{
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.util ul li a{
+  display: block;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50px;
+  height: 65px;
+  background-size: auto;
+  text-align: center;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.util ul .search a{
+  background-image: url(/img/header_util.png);
+  text-indent: -99999px;
+  width: 50px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  margin-right: -15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.util ul .my_page a{
+  background-image: url(/img/header_util.png);
+  text-indent: -99999px;
+  width: 40px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: -45px center;
+  position: relative;
+  top: 0;
+  left: 16px;
+}
+
+.util ul .login{
+  position: relative;
+}
+
+.util ul .login::after{
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #999;
+  margin-left: 50px;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+.util ul .login a, .util ul .join a{
+  text-align: center;
+  font-size: 15px;
+  width: 60px;
+  height: 25px;
+  margin-top: 25px;
+  color: #222;
+}
+
+.util ul .login a:hover, .util ul .join a:hover{
+  color: #cf0a2c;
+}
+
+.util ul .cart a{
+  background-image: url(/img/header_util.png);
+  text-indent: -99999px;
+  width: 50px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: -87px;
+}
+
+.util ul .cart{
+  position: relative;
 }
