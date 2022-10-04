@@ -6,7 +6,7 @@
 
 ** ======================================== ** <br>
 git init <br>
-git remote add origin https://github.com/깃허브아이디/저장소이름.git <br>
+git remote add origin https://github.com/jaehyun-github/repoName.git <br>
 git pull origin main <br>
 ** ======================================== ** <br>
 
@@ -47,8 +47,8 @@ pakage.json 파일의 맨 위
 “predeploy”: “npm run build” 와 “deploy”: “gh-pages -d build” 코드를 추가해준 후 저장해주면 됨. <br>
 
 ** ======================================== ** <br>
- "predeploy": "npm run build", <br>
- "deploy": "gh-pages -d build" <br>
+"predeploy": "npm run build", <br>
+"deploy": "gh-pages -d build" <br>
 ** ======================================== ** <br>
     
 위의 해당 코드들을 추가한 후 파일을 저장하고 터미널에서 npm run deploy 커맨드를 실행. <br>
@@ -56,3 +56,14 @@ github repository에서 해당 repository page 설정을 해준 후 나타나는
 
 프로젝트 배포 후 React Project가 아니라 README.md 파일이 나타나는 경우 <br>
 Branch를 ‘main’이나 설정해둔 Branch명이 아니라 ‘gh-pages’로 지정해주면 정상적으로 React Project가 출력됨.
+
+<br><br>
+
+
+git remote add origin https://github.com/jaehyun-github/repoName.git에서 오류가 났을때 (대부분 오타) <br>
+
+** ======================================== ** <br>
+git remote remove origin <br>
+git remote add origin https://github.com/jaehyun-github/repoName.git <br>
+** ======================================== ** <br>
+
