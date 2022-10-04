@@ -3,9 +3,9 @@
 명령어 순서
 
 ** ======================================== ** <br>
-git init
-git remote add origin https://github.com/깃허브아이디/저장소이름.git
-git pull origin main
+git init <br>
+git remote add origin https://github.com/깃허브아이디/저장소이름.git <br>
+git pull origin main <br>
 ** ======================================== ** <br>
 
 여기까지 진행되면 로컬 프로젝트와 git repository가 연결됨.
