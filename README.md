@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+로컬프로젝트와 git repository 연결하기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+명령어 순서
 
-## Available Scripts
+========================================
+git init
+git remote add origin https://github.com/깃허브아이디/저장소이름.git
+git pull origin main
+========================================
 
-In the project directory, you can run:
+여기까지 진행되면 로컬 프로젝트와 git repository가 연결됨.
+git init 명령어를 입력하면 바로 로컬 프로젝트에 .git 이라는 폴더가 자동으로 생성됨.
 
-### `npm start`
+repository 연결 후 명령어
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+========================================
+git add.
+git commit -m “커밋 메시지”
+git push origin main
+git push origin main 
+========================================
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+명령어 입력 시 아래와 같은 오류코드 송출 시
 
-### `npm test`
+! [rejected] main -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/jaehyun-github/repoName.git' 
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+==== git push oirign +main 과 같이 main 앞에 + 를 붙여서 명령어를 입력하면 커밋이 됨. ====
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+github page 배포하기
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+React 프로젝트를 github page에 배포하기 위해서 로컬 프로젝트에 gh-pages 를 설치해야 함. 배포할 React 프로젝트에서 아래의 명령어를 실행.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+pakage.json 파일의 맨 위
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+“homepage”: “https://jaehyun-github.github.io/repoName/”을 추가하고 “script” 부분에 
+“predeploy”: “npm run build” 와 “deploy”: “gh-pages -d build” 코드를 추가해준 후 저장해주면 됨.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+========================================
+ "predeploy": "npm run build",
+ "deploy": "gh-pages -d build"
+========================================
+    
+위의 해당 코드들을 추가한 후 파일을 저장하고 터미널에서 npm run deploy 커맨드를 실행.
+github repository에서 해당 repository page 설정을 해준 후 나타나는 주소로 접속하면 React Project가 배포된 것을 확인 할 수 있음.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+프로젝트 배포 후 React Project가 아니라 README.md 파일이 나타나는 경우
+Branch를 ‘main’이나 설정해둔 Branch명이 아니라 ‘gh-pages’로 지정해주면 정상적으로 React Project가 출력됨.
