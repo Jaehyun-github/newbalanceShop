@@ -2,6 +2,10 @@ https://jaehyun-github.github.io/newbalanceShop/
 
 <br>
 
+** 현재 제작중입니다. (미완성) **
+
+<br>
+
 로컬프로젝트와 git repository 연결하기
 
 <br>
