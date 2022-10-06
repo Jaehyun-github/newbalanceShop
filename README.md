@@ -27,7 +27,6 @@ repository 연결 후 명령어
 git add. <br>
 git commit -m “커밋 메시지” <br>
 git push origin main <br>
-git push origin main <br>
 ** ======================================== ** <br>
 
 명령어 입력 시 아래와 같은 오류코드 송출 시
