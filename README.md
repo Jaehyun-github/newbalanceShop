@@ -67,6 +67,15 @@ Branch를 ‘main’이나 설정해둔 Branch명이 아니라 ‘gh-pages’로
 <br><br>
 
 
+배포용 build 파일 업로드
+
+
+** ======================================== ** <br>
+npm run deploy <br>
+** ======================================== ** <br>
+
+<br><br>
+
 git remote add origin https://github.com/jaehyun-github/repoName.git에서 오류가 났을때 (대부분 오타) <br>
 
 ** ======================================== ** <br>
