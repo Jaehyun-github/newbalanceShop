@@ -16,7 +16,7 @@ function Container(props){
         <section className="row1">
           <a href="#">
             <Swiper modules={[EffectFade]} effect="fade" className="banner" spaceBetween={0} slidesPerView={1} navigation pagination={{ clickable: true }} 
-                    autoPlay={{ delay: 1000, disableOnInteraction: false}} allowTouchMove={false} loop>
+                    autoPlay={{ delay: 2000, disableOnInteraction: false}} allowTouchMove={false} loop>
                 <SwiperSlide><img src={process.env.PUBLIC_URL + "/images/row1banner.gif"} alt="banner1"/></SwiperSlide>
                 <SwiperSlide><img src={process.env.PUBLIC_URL + "/images/row1banner2.jpg"} alt="banner2"/></SwiperSlide>
                 <SwiperSlide><video muted autoPlay loop src={process.env.PUBLIC_URL + "/videos/row1video.mp4"} type="video/mp4"></video></SwiperSlide>   
