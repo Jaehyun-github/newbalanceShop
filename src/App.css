@@ -260,11 +260,11 @@ a{
 }
 
 .swiper-button-prev{
-  width: 0px !important;
+  width: 1px !important;
 }
 
 .swiper-button-next{
-  width: 0px !important;
+  width: 1px !important;
 }
 
 .swiper-button-prev::after{
