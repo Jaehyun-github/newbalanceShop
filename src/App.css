@@ -239,13 +239,19 @@ a{
   position: relative;
   overflow: hidden;
   width: 1800px;
-  height: 835px;
+  height: 950px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
+.swiper-slide p{
+  background-color: #fff;
+}
+
 .swiper-slide img{
-  height: auto !important;
+  width: auto !important;
+  height: 835px !important;
+  position: relative;
 }
 
 .swiper-slide video{
@@ -254,30 +260,36 @@ a{
 }
 
 .swiper-button-prev{
-  width: 50px;
-  padding: 20px;
+  width: 0px !important;
 }
 
 .swiper-button-next{
-  width: 50px;
-  padding: 20px;
+  width: 0px !important;
 }
 
 .swiper-button-prev::after{
   color: #fff;
   font-size: 35px !important;
+  position: absolute;
+  top: -100px;
+  padding: 20px;
+  margin-left: 50px;
 }
 
 .swiper-button-next::after{
   color: #fff;
   font-size: 35px !important;
+  position: absolute;
+  top: -100px;
+  padding: 20px;
+  margin-right: 50px;
 }
 
 .swiper-pagination-bullet{
   background-color: transparent !important;
   padding: 2px;
   position: relative;
-  bottom: 30px;
+  bottom: 190px;
   border: 2px solid black;
   opacity: 1 !important;
 }
@@ -302,23 +314,35 @@ a{
   border: 2px solid #111;
 }
 
-.text_box{
+.title{
   margin: 0 auto;
-  height: 300px;
+  height: 50px;
   text-align: center;
-  padding-top: 10px;
-}
-
-.text_box .title{
+  padding-top: 40px;
   font-size: 42px;
   font-weight: 900;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  color: black;
+  cursor: default;
 }
 
-.text_box .content{
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 25px;
+.content{
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+  position: relative;
+  bottom: 40px;
+  right: 0;
+  cursor: default;
+}
+
+.text_box{
+  margin: 0 auto;
+  text-align: center;
 }
 
 .submit_btn{
@@ -351,4 +375,8 @@ a{
   text-align: center;
   line-height: 0px;
   background-color: #141414;
+}
+
+.submit_btn2:hover{
+  opacity: 0.9;
 }
