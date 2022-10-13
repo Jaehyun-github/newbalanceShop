@@ -6,80 +6,53 @@ https://jaehyun-github.github.io/newbalanceShop/
 
 <br>
 
-로컬프로젝트와 git repository 연결하기
+NewBalance 리뉴얼 <br>
+
+- 사용한 라이브러리 : Swiper
 
 <br>
 
-명령어 순서
+React를 독학하면서 리뉴얼 해보는 "NewBalance" 웹사이트입니다. 현재 미완성이며, 깃허브에 매일 그날의 기록들을 업로드하고 있습니다. <br><br>
+data.json 파일을 만들어서 fetch를 통해 데이터를 불러오고 usestate로 코드를 작성하였습니다.
 
-** ======================================== ** <br>
-git init <br>
-git remote add origin https://github.com/jaehyun-github/repoName.git <br>
-git pull origin main <br>
-** ======================================== ** <br>
+      // Container.js
 
-여기까지 진행되면 로컬 프로젝트와 git repository가 연결됨. <br>
-git init 명령어를 입력하면 바로 로컬 프로젝트에 .git 이라는 폴더가 자동으로 생성됨.
+      import { useState } from 'react';
+      
+      let [banner1, setBanner1] = useState("");
+      let [title1, setTitle1] = useState("");
+      let [content1, setContent1] = useState("");
 
-repository 연결 후 명령어
+      fetch(process.env.PUBLIC_URL + '/data/data.json')
+        .then(res => res.json())
+        .then(res => {
+          setBanner1(res["data"][0]["url"]);
+          setTitle1(res["data"][0]["title"]);
+          setContent1(res["data"][0]["content"]);
+      })
+          
+      <SwiperSlide><img src={process.env.PUBLIC_URL + banner1} alt="banner1"/>
+        <p className="title">{title1}</p>
+        <p className="content">{content1}</p> 
+      </SwiperSlide>
+      
+      
+      // data.json
+      
+      {
+        "data": [
+          {
+            "id": 1,
+            "url": "/images/row1banner.gif",
+            "name": "banner1",
+            "title": "세상의 모든 바람막이",
+            "content": "NB WINDBREAKER"
+          },
 
-** ======================================== ** <br>
-git add. <br>
-git commit -m “커밋 메시지” <br>
-git push origin main <br>
-** ======================================== ** <br>
+            /* ...중략 */
 
-명령어 입력 시 아래와 같은 오류코드 송출 시
-
-! [rejected] main -> main (non-fast-forward) error: failed to push some refs to 'https://github.com/jaehyun-github/repoName.git' <br>
-hint: Updates were rejected because the tip of your current branch is behind <br>
-hint: its remote counterpart. Integrate the remote changes (e.g. <br>
-hint: 'git pull ...') before pushing again. <br>
-hint: See the 'Note about fast-forwards' in 'git push --help' for details. <br>
-
-** ==== git push oirign +main 과 같이 main 앞에 + 를 붙여서 명령어를 입력하면 커밋이 됨. ==== **
-
-<br><br>
-
-github page 배포하기
-
-<br><br>
-
-React 프로젝트를 github page에 배포하기 위해서 로컬 프로젝트에 gh-pages 를 설치해야 함. <br>
-배포할 React 프로젝트에서 아래의 명령어를 실행. <br>
-
-pakage.json 파일의 맨 위
-
-“homepage”: “https://jaehyun-github.github.io/repoName/”을 추가하고 “script” 부분에 <br>
-“predeploy”: “npm run build” 와 “deploy”: “gh-pages -d build” 코드를 추가해준 후 저장해주면 됨. <br>
-
-** ======================================== ** <br>
-"predeploy": "npm run build", <br>
-"deploy": "gh-pages -d build" <br>
-** ======================================== ** <br>
-    
-위의 해당 코드들을 추가한 후 파일을 저장하고 터미널에서 npm run deploy 커맨드를 실행. <br>
-github repository에서 해당 repository page 설정을 해준 후 나타나는 주소로 접속하면 React Project가 배포된 것을 확인 할 수 있음. <br>
-
-프로젝트 배포 후 React Project가 아니라 README.md 파일이 나타나는 경우 <br>
-Branch를 ‘main’이나 설정해둔 Branch명이 아니라 ‘gh-pages’로 지정해주면 정상적으로 React Project가 출력됨.
-
-<br><br>
-
-
-배포용 build 파일 업로드
-
-
-** ======================================== ** <br>
-npm run deploy <br>
-** ======================================== ** <br>
-
-<br><br>
-
-git remote add origin https://github.com/jaehyun-github/repoName.git에서 오류가 났을때 (대부분 오타) <br>
-
-** ======================================== ** <br>
-git remote remove origin <br>
-git remote add origin https://github.com/jaehyun-github/repoName.git <br>
-** ======================================== ** <br>
-
+        ]
+      }
+      
+![배너슬라이드](https://user-images.githubusercontent.com/105622596/195616569-466fbf6a-06bf-4fc9-87ea-d4ee4e5088cc.gif) <br>
+정상적으로 구현이 된 모습입니다.
