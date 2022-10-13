@@ -54,5 +54,5 @@ data.json 파일을 만들어서 fetch를 통해 데이터를 불러오고 usest
         ]
       }
       
-![배너슬라이드](https://user-images.githubusercontent.com/105622596/195616569-466fbf6a-06bf-4fc9-87ea-d4ee4e5088cc.gif) <br>
+![슬라이드](https://user-images.githubusercontent.com/105622596/195623262-48f537d8-74b9-4a6c-9b99-7096d88a8615.gif) <br>
 정상적으로 구현이 된 모습입니다.
