@@ -8,6 +8,8 @@ https://jaehyun-github.github.io/newbalanceShop/
 
 NewBalance 리뉴얼 <br>
 
+- Visual Studio Code
+- React, CSS
 - 사용한 라이브러리 : Swiper
 
 <br>
