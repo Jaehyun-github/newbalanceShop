@@ -12,7 +12,8 @@ NewBalance 리뉴얼 <br>
 
 <br>
 
-React를 독학하면서 리뉴얼 해보는 "NewBalance" 웹사이트입니다. 현재 미완성이며, 깃허브에 매일 그날의 기록들을 업로드하고 있습니다. <br><br>
+React를 독학하면서 리뉴얼 해보는 "NewBalance" 웹사이트입니다. <br>
+현재 미완성이며, 깃허브에 매일 그날의 기록들을 업로드하고 있습니다. <br><br>
 data.json 파일을 만들어서 fetch를 통해 데이터를 불러오고 usestate로 코드를 작성하였습니다.
 
       // Container.js
