@@ -343,6 +343,7 @@ a{
 .text_box{
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 250px;
 }
 
 .submit_btn{
@@ -379,4 +380,11 @@ a{
 
 .submit_btn2:hover{
   opacity: 0.9;
+}
+
+.row2{
+  width: 1800px;
+  height: 830px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }

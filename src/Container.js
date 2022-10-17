@@ -24,6 +24,10 @@ function Container(props){
   let [video, setVideo] = useState("");
   let [title3, setTitle3] = useState("");
   let [content3, setContent3] = useState("");
+
+  let [row2banner, setRow2banner] = useState("");
+  let [row2title, setRow2title] = useState("");
+  let [row2content, setRow2content] = useState("");
   
   fetch(process.env.PUBLIC_URL + '/data/data.json')
     .then(res => res.json())
@@ -37,6 +41,9 @@ function Container(props){
       setVideo(res["data"][2]["url"]);
       setTitle3(res["data"][2]["title"]);
       setContent3(res["data"][2]["content"]);
+      setRow2banner(res["data"][3]["url"]);
+      setRow2title(res["data"][3]["title"]);
+      setRow2content(res["data"][3]["content"]);
   })
 
     return(
@@ -64,9 +71,19 @@ function Container(props){
           </a>
         </section>
         <div className="text_box">
+          <input type="submit" value="더 알아보기" name="more" className="submit_btn"></input>
+          <input type="submit" value="구매하기" name="send" className="submit_btn2"></input>
+        </div>
+        <section className="row2">
+          <a href="#"><img src={process.env.PUBLIC_URL + row2banner} alt="row2banner" /></a>
+          <p className="title">{row2title}</p>
+          <p className="content">{row2content}</p>
+          <div className="text_box">
             <input type="submit" value="더 알아보기" name="more" className="submit_btn"></input>
             <input type="submit" value="구매하기" name="send" className="submit_btn2"></input>
-          </div>
+        </div>
+        </section>
+        
       </div>
     );
 
