@@ -386,5 +386,23 @@ a{
   width: 1800px;
   height: 830px;
   margin: 0 auto;
+  margin-bottom: 250px;
+}
+
+.row2 .text_box{
+  position: relative;
+  bottom: 10px;
+}
+
+.row3{
+  width: 1800px;
+  height: 830px;
+  margin: 0 auto;
   margin-bottom: 30px;
+  padding-top: 220px;
+}
+
+.row3 .text_box{
+  position: relative;
+  bottom: 10px;
 }

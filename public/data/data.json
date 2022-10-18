@@ -16,16 +16,23 @@
       },
       {
         "id": 3,
-        "url" : "/videos/row1video.mp4",
-        "name" : "video",
-        "title" : "Newbalance Varsity style",
-        "content" : "뉴발란스의 스포츠 헤리티지에 스트릿 무드를 더해 현대적으로 재해석한 바시티 스타일"
+        "url" : "/images/row1banner3.jpg",
+        "name" : "banner3",
+        "title" : "NB DOWN COLLECTION",
+        "content" : "New zero & New active"
       },
       {
         "id": 4,
         "url" : "/images/row2banner.jpg",
         "title" : "NB KIDS REVERSIBLE DOWN COLLECTION",
         "content" : "두 가지 스타일을 한번에, 양면 착용으로 다양하게 연출하는 겨울 필수 아우터"
+      },
+      {
+        "id": 5,
+        "url" : "/videos/row1video.mp4",
+        "name" : "video",
+        "title" : "Newbalance Varsity style",
+        "content" : "뉴발란스의 스포츠 헤리티지에 스트릿 무드를 더해 현대적으로 재해석한 바시티 스타일"
       }
     ]
 
