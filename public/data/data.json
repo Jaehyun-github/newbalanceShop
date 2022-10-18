@@ -24,6 +24,7 @@
       {
         "id": 4,
         "url" : "/images/row2banner.jpg",
+        "name" : "row2banner",
         "title" : "NB KIDS REVERSIBLE DOWN COLLECTION",
         "content" : "두 가지 스타일을 한번에, 양면 착용으로 다양하게 연출하는 겨울 필수 아우터"
       },
@@ -34,8 +35,70 @@
         "title" : "Newbalance Varsity style",
         "content" : "뉴발란스의 스포츠 헤리티지에 스트릿 무드를 더해 현대적으로 재해석한 바시티 스타일"
       }
+    ],
+
+    "data2":[
+      {
+        "id": 1,
+        "url" : "/images/UL420CA2_AMW_99000.jpg",
+        "title" : "UL420CA2",
+        "price" : "99,000"
+      },
+      {
+        "id": 2,
+        "url" : "/images/UL420CB2_AMW_99000.jpg",
+        "title" : "UL420CB2",
+        "price" : "99,000"
+      },
+      {
+        "id": 3,
+        "url" : "/images/UL420CC2_AMW_99000.jpg",
+        "title" : "UL420CC2",
+        "price" : "99,000"
+      },
+      {
+        "id": 4,
+        "url" : "/images/860_V13_M_159000.jpg",
+        "title" : "860_V13",
+        "price" : "159,000"
+      },
+      {
+        "id": 5,
+        "url" : "/images/CM996BG_AMW_129000.jpg",
+        "title" : "CM996BG",
+        "price" : "129,000"
+      },
+      {
+        "id": 6,
+        "url" : "/images/880_V5_AW_169000.jpg",
+        "title" : "880_V5",
+        "price" : "169,000"
+      },
+      {
+        "id": 7,
+        "url" : "/images/WX452RM_AW_109000.jpg",
+        "title" : "WX452RM",
+        "price" : "109,000"
+      },
+      {
+        "id": 8,
+        "url" : "/images/M730NNG_AM_219000.jpg",
+        "title" : "M730NNG",
+        "price" : "219,000"
+      },
+      {
+        "id": 9,
+        "url" : "/images/M730GGN_AM_219000.jpg",
+        "title" : "M730GGN",
+        "price" : "219,000"
+      },
+      {
+        "id": 10,
+        "url" : "/images/M730UKF_M_219000.jpg",
+        "title" : "M730UKF",
+        "price" : "219,000"
+      }
     ]
 
-
-  }
+}
 
