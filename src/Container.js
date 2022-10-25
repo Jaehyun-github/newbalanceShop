@@ -47,8 +47,7 @@ function Container(){
       for (let i = 0; i < res["data"].length; i++){
         banner.push(res["data"][i]["url"]);
         title.push(res["data"][i]["title"]);
-        content.push(res["data"][i]["content"]);
-        
+        content.push(res["data"][i]["content"]); 
       }
 
       for (let i = 0; i < res["data2"].length; i++){
@@ -81,7 +80,7 @@ function Container(){
                     loop>
               {[1, 2, 3].map((a, i) => {
                 return <SwiperSlide key={a}>
-                  <img src={process.env.PUBLIC_URL + banner[i]} alt="banner" />
+                  <img src={process.env.PUBLIC_URL + banner[i]} alt="banner"/>
                   <p className="title">{title[i]}</p>
                   <p className="content">{content[i]}</p>  
                 </SwiperSlide>
@@ -115,10 +114,10 @@ function Container(){
           <div className="title_box">
             <h3>New</h3>
             <ul>
-              <li><a href="#">All</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">Kids</a></li>
+              <li className="tab_button active">All</li>
+              <li className="tab_button">Men</li>
+              <li className="tab_button">Women</li>
+              <li className="tab_button">Kids</li>
             </ul>
           </div>
           <Swiper className="swiper-container" spaceBetween={30} slidesPerView={4}

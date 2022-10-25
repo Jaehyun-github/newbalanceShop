@@ -429,17 +429,22 @@ a{
   display: flex;
 }
 
-.row4 li a{
+.row4 li{
   font-size: 20px;
   font-family: sans-serif;
   font-weight: bold;
   line-height: 25px;
   color: #aeaeae;
   margin-left: 40px;
+  cursor: pointer;
 }
 
-.row4 li a:active{
+.row4 li:active{
   color: #141414;
+}
+
+.active{
+  color: #141414 !important;
 }
 
 .row4 .swiper-container{
