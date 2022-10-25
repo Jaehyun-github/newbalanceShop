@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/newbalanceShop/static/css/main.4e315496.css",
-    "main.js": "/newbalanceShop/static/js/main.d2ba64d0.js",
+    "main.css": "/newbalanceShop/static/css/main.edf3f33f.css",
+    "main.js": "/newbalanceShop/static/js/main.3c3cb1da.js",
     "static/js/787.98ab1357.chunk.js": "/newbalanceShop/static/js/787.98ab1357.chunk.js",
     "index.html": "/newbalanceShop/index.html",
-    "main.4e315496.css.map": "/newbalanceShop/static/css/main.4e315496.css.map",
-    "main.d2ba64d0.js.map": "/newbalanceShop/static/js/main.d2ba64d0.js.map",
+    "main.edf3f33f.css.map": "/newbalanceShop/static/css/main.edf3f33f.css.map",
+    "main.3c3cb1da.js.map": "/newbalanceShop/static/js/main.3c3cb1da.js.map",
     "787.98ab1357.chunk.js.map": "/newbalanceShop/static/js/787.98ab1357.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e315496.css",
-    "static/js/main.d2ba64d0.js"
+    "static/css/main.edf3f33f.css",
+    "static/js/main.3c3cb1da.js"
   ]
 }
