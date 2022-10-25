@@ -16,31 +16,47 @@ NewBalance 리뉴얼 <br>
 
 React를 독학하면서 리뉴얼 해보는 "NewBalance" 웹사이트입니다. <br>
 현재 미완성이며, 깃허브에 매일 그날의 기록들을 업로드하고 있습니다. <br><br>
-data.json 파일을 만들어서 fetch를 통해 데이터를 불러오고 usestate로 코드를 작성하였습니다.
+data.json 파일을 만들어서 fetch를 통해 데이터를 불러오고 usestate로 코드를 작성하였습니다. <br><br>
 
-      // Container.js
+// Container.js
 
       import { useState } from 'react';
+      import { Swiper, SwiperSlide } from 'swiper/react';
       
-      let [banner1, setBanner1] = useState("");
-      let [title1, setTitle1] = useState("");
-      let [content1, setContent1] = useState("");
+      let [banner, setBanner] = useState([]);
+      let [title, setTitle] = useState([]);
+      let [content, setContent] = useState([]);
 
       fetch(process.env.PUBLIC_URL + '/data/data.json')
         .then(res => res.json())
         .then(res => {
-          setBanner1(res["data"][0]["url"]);
-          setTitle1(res["data"][0]["title"]);
-          setContent1(res["data"][0]["content"]);
+            let banner = [];
+            let title = [];
+            let content = [];
+            
+            for (let i = 0; i < res["data"].length; i++){
+              banner.push(res["data"][i]["url"]);
+              title.push(res["data"][i]["title"]);
+              content.push(res["data"][i]["content"]);
+            }
+            
+            setBanner(banner);
+            setTitle(title);
+            setContent(content);
       })
-          
-      <SwiperSlide><img src={process.env.PUBLIC_URL + banner1} alt="banner1"/>
-        <p className="title">{title1}</p>
-        <p className="content">{content1}</p> 
-      </SwiperSlide>
+      
+       <Swiper>
+        {[1, 2, 3].map((a, i) => {
+         return <SwiperSlide key={a}>
+          <img src={process.env.PUBLIC_URL + banner[i]} alt="banner"/>
+           <p className="title">{title[i]}</p>
+           <p className="content">{content[i]}</p>  
+         </SwiperSlide>
+        })}
+       </Swiper>
       
       
-      // data.json
+// data.json
       
       {
         "data": [
