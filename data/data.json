@@ -98,7 +98,117 @@
         "title" : "M730UKF",
         "price" : "219,000"
       }
-    ]
+    ],
 
+    "data3" :[
+      {
+        "id": 1,
+        "url" : "/images/row5image1.gif",
+        "title" : "2022 PADDED SERIES",
+        "content" : "은은한 광택감의 폴리 소재에 도톰한 두께를 더한 PADDED SERIES"
+      },
+      {
+        "id": 2,
+        "url" : "/images/row5image2.jpg",
+        "title" : "CLASSIC RUNNING, ML725",
+        "content" : "스포츠와 라이프를 넘나드는 편안하면서도 스타일리쉬한 패션 웨어"
+      },
+      {
+        "id": 3,
+        "url" : "/images/row5image3.gif",
+        "title" : "237 New Colors",
+        "content" : "어디든 쉽게 매치할 수 있는 간결한 디자인의 237"
+      }
+    ],
+
+    "data4" :[
+      {
+        "id": 1,
+        "url" : "/images/M990GL5_A_259000.jpg",
+        "title" : "M990GL5",
+        "price" : "259,000"
+      },
+      {
+        "id": 2,
+        "url" : "/images/MR993GL_M_259000.jpg",
+        "title" : "MR993GL",
+        "price" : "259,000"
+      },
+      {
+        "id": 3,
+        "url" : "/images/W480SK5_W_99000.jpg",
+        "title" : "W480SK5",
+        "price" : "99,000"
+      },
+      {
+        "id": 4,
+        "url" : "/images/M2002RVC_M_179000.jpg",
+        "title" : "M2002RVC",
+        "price" : "179,000"
+      },
+      {
+        "id": 5,
+        "url" : "/images/WR993GL_W_259000.jpg",
+        "title" : "WR993GL",
+        "price" : "259,000"
+      },
+      {
+        "id": 6,
+        "url" : "/images/M2002RHR_M_149000.jpg",
+        "title" : "M2002RHR",
+        "price" : "149,000"
+      },
+      {
+        "id": 7,
+        "url" : "/images/MS327KA1_A_139000.jpg",
+        "title" : "MS327KA1",
+        "price" : "139,000"
+      },
+      {
+        "id": 8,
+        "url" : "/images/W480BM5_W_99000.jpg",
+        "title" : "W480BM5",
+        "price" : "99,000"
+      },
+      {
+        "id": 9,
+        "url" : "/images/MS327KC1_A_139000.jpg",
+        "title" : "MS327KC1",
+        "price" : "139,000"
+      },
+      {
+        "id": 10,
+        "url" : "/images/M990TB2_A_279000.jpg",
+        "title" : "M990TB2",
+        "price" : "279,000"
+      }
+    ],
+
+    "data5" :[
+      {
+        "id": 1,
+        "url" : "/images/row7image1.jpg",
+        "title" : "Men"
+      },
+      {
+        "id": 2,
+        "url" : "/images/row7image2.jpg",
+        "title" : "Women"
+      },
+      {
+        "id": 3,
+        "url" : "/images/row7image3.jpg",
+        "title" : "Kids"
+      }
+    ],
+
+    "data6" :[
+      {
+        "id": 1,
+        "url" : "/images/row8banner.jpg",
+        "title" : "WE GOT NOW 2022",
+        "content" : "THE POWER OF NOW"
+      }
+    ]
 }
 
