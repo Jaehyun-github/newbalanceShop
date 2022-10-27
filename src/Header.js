@@ -1,7 +1,7 @@
 /* eslint-disable */
 import './App.css';
 
-function Header(props){
+function Header(){
     return(
       <div id="header">
         <header id="header">
