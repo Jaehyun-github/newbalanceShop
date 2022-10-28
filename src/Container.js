@@ -209,7 +209,7 @@ function Container(){
           </div>
           <Swiper className="swiper-container" spaceBetween={30} slidesPerView={4}
                    scrollbar={{draggable: true, dragSize:350}}>
-            {newshoes.map((a, i) => {
+            {bestshoes.map((a, i) => {
               return <SwiperSlide key={a} className="swiper-slide">                  
                 <a href="#">
                   <img src={process.env.PUBLIC_URL + bestshoes[i]}/>
