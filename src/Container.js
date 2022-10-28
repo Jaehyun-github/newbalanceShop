@@ -123,7 +123,7 @@ function Container(){
       <div id="container">
         <section className="row1">
           <a href="#">
-            <Swiper modules={[EffectFade]} effect="fade" transformel="true" className="banner" spaceBetween={0} slidesPerView={1} navigation pagination={{ clickable: true }} 
+            <Swiper modules={[EffectFade]} effect="fade" transformel="true" className="banner" spaceBetween={0} slidesPerView={1} navigation pagination={{clickable: true}} 
                     autoplay={{delay: 3000, disableOnInteraction: false}} allowTouchMove={false}
                     loop>
               {[1, 2, 3].map((a, i) => {
@@ -208,7 +208,7 @@ function Container(){
             </ul>
           </div>
           <Swiper className="swiper-container" spaceBetween={30} slidesPerView={4}
-                   scrollbar={{draggable: true, dragSize:350}}>
+                  scrollbar={{draggable: true, dragSize:350}}>
             {bestshoes.map((a, i) => {
               return <SwiperSlide key={a} className="swiper-slide">                  
                 <a href="#">
@@ -227,7 +227,7 @@ function Container(){
           <div className="showall">
             {row7image.map((a, i) => 
               <ul key={a}>
-                <li><a href="#"><img src={process.env.PUBLIC_URL + row7image[i]} alt="row5image"/></a></li>
+                <li><a href="#"><img src={process.env.PUBLIC_URL + row7image[i]} alt="row7image"/></a></li>
                 <li><a href="#"><p className="title7">{row7title[i]}</p></a></li>
               </ul>
             )}
