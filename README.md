@@ -2,7 +2,8 @@ https://jaehyun-github.github.io/newbalanceShop/
 
 <br>
 
-** 현재 제작중입니다. (미완성) **
+** 메인 화면만 제작했습니다. ** <br><br>
+** 기존 NewBalance 사이트는 JQuery로 제작 되었지만, 저는 React로 리뉴얼 해봤습니다. **
 
 <br>
 
@@ -15,7 +16,7 @@ NewBalance 리뉴얼 <br>
 <br>
 
 React를 독학하면서 리뉴얼 해보는 "NewBalance" 웹사이트입니다. <br>
-현재 미완성이며, 깃허브에 매일 그날의 기록들을 업로드하고 있습니다. <br><br>
+
 data.json 파일을 만들어서 fetch를 통해 데이터를 불러오고 usestate로 코드를 작성하였습니다. <br><br>
 
 // Container.js
