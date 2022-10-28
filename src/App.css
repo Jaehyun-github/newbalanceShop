@@ -752,7 +752,7 @@ h3{
 .footer_right .sns{
   height: 22px;
   margin-bottom: 17px;
-  background: url(../public/images/footer_sns.png);
+  background: url(/public/images/footer_sns.png);
   background-repeat: no-repeat;
 }
 
