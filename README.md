@@ -2,7 +2,7 @@ https://jaehyun-github.github.io/newbalanceShop/
 
 <br>
 
-** 2023.06 리팩토링 전 버전입니다.**
+** [2023.06 기준] 리팩토링 전 버전입니다.**
 
 ** 메인 화면만 제작했습니다. ** <br><br>
 ** 기존 NewBalance 사이트는 JQuery로 제작 되었지만, 저는 React로 리뉴얼 해봤습니다. **
